@@ -1,0 +1,78 @@
+/* Classes */
+.center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-header {
+  font-family: Bebas Neue;
+}
+
+.quiz-section {
+  display: block;
+  margin-top: 3em;
+}
+
+.museum-button{
+  display: block;
+  border-radius: 25px;
+  font-family: Averia Sans Libre;
+  font-size: 1.2em;
+  width: 200px;
+  margin-top: 3em;
+  background-color: white;
+  text-decoration: none;
+}
+
+.museum-button:hover {
+  color: #d6542d;
+}
+
+.characters {
+  padding: 1.5em;
+} 
+
+.characters img {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.input-box {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  font-family: Averia Sans Libre;
+  width: 1.5em;
+}
+
+/* HTML Elements */
+html {
+  background-color: #8421b2;
+  color:white;
+  font-family: Averia Sans Libre;
+  font-size: 1.5em;
+}
+
+body {
+  margin: 3em;
+}
+
+div {
+  display: block;
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin: 0%;
+  padding: 10px;
+}
+
+h2 {
+  margin: 0%;
+}
+
+p {
+  display: inline;
+}

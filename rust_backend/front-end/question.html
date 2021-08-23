@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Mobile-first responsive viewport meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to CSS stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/question.css">
+    <title>Question: Tropical Quiz</title>
+</head>
+
+<body>
+    <section class="question-header center">
+        <img src="assets/BrucieButterfly.png" alt="Butterfly character"
+            width="128" height="128">
+
+        <!-- Speech bubble with question -->
+        <div class="speech-bubble">
+            <p>Question: </p>
+            <p id="question"></p>
+        </div>
+    </section>
+
+    <!-- <img src="assets/butterflydrink.png" alt="Butterfly drinking" width="300"> -->
+    <br><br>
+
+    <div class="question-list center">
+        <button type="button" onclick="answer(this)" id="answer1" class="museum-button"></button>
+        <button type="button" onclick="answer(this)" id="answer2" class="museum-button"></button>
+        <button type="button" onclick="answer(this)" id="answer3" class="museum-button"></button>
+        <button type="button" onclick="answer(this)" id="answer4" class="museum-button"></button>
+    </div>
+    <button type="button" onclick="next()" id="next" class="next-button center" style="display: none;">Next</button>
+
+    <h2 id="score">0/8</h2>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+
+    <script src="js/question.js"></script>
+</body>
+
+</html>

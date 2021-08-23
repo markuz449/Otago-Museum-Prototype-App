@@ -1,0 +1,110 @@
+@startuml Butterfly Quiz App PostgreSQL ERD
+
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity created_creature {
+    * creature_id: Serial <<PK>>
+    ---
+    * creature_name: varchar(255)
+    * creature_type: Serial <<FK>>
+}
+
+entity butterfly_creature {
+    * creature_id: Serial <<PK>>
+    * creature_type: Serial <<PK, FK>>
+    ---
+    * antenna: integer
+    * head: integer
+    * thorax: integer
+    * abdomen: integer
+    * left_forewing: integer
+    * right_forewing: integer
+    * left_hindwing: integer
+    * right_hindwing: integer
+}
+
+entity spider_creature {
+    * creature_id: Serial <<PK>>
+    * creature_type: Serial <<PK, FK>>
+    ---
+    * head: integer
+    * thorax: integer
+    * abdomen: integer
+    * left_top_legs: integer
+    * right_top_legs: integer
+    * left_bottom_legs: integer
+    * right_bottom_legs: integer
+}
+
+entity terrapin_creature {
+    * creature_id: Serial <<PK>>
+    * creature_type: Serial <<PK, FK>>
+    ---
+    * head: integer
+    * tail: integer
+    * shell: integer
+    * left_leg: integer
+    * right_leg: integer
+}
+
+entity question {
+    * question_id: Serial <<PK>>
+    ---
+    * question_type: varchar(255)
+    * difficulty_level: Integer
+    * answer_id: Serial <<FK>>
+    * character_question_id: Serial <<FK>>
+}
+
+entity answers {
+    * question_id: Serial <<PK>>
+    * answer_id: Serial <<PK>>
+    ---
+    * text: varchar(255)
+    * correct: bool
+}
+
+entity character_question {
+    * character_question_id: Serial <<PK>>
+    ---
+    * question_text: varchar(255)
+    * correct_answer_response: varchar(255)
+    * wrong_answer_response: varchar(255)
+    * character_id: Serial <<FK>>
+}
+
+entity character {
+    * character_id: Serial <<PK>>
+    ---
+    * name: varchar(255)
+    * intro_text: varchar(255)
+    * encouragement_text: varchar(255)
+    * image_path: varchar(255)
+}
+
+entity did_you_know {
+    * did_you_know_id: Serial
+    ---
+    * fact_text: varchar(255)
+}
+
+entity analytics {
+    * user_id: Serial <<PK>>
+    ---
+    * age: Integer
+    * total_quiz_duration: Time
+    * selected_character: Integer
+}
+
+question ||.|{ character_question
+character_question }o..|| character
+question ||..|{ answers
+created_creature ||.o| butterfly_creature
+created_creature ||..o| spider_creature
+created_creature ||..o| terrapin_creature
+
+@enduml

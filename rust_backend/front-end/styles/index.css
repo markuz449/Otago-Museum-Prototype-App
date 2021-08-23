@@ -1,0 +1,154 @@
+/* Classes */
+.title-header {
+    font-family: Bebas Neue;
+}
+
+.quiz-section {
+    display: block;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.museum-button{
+    display: block;
+    border-radius: 25px;
+    font-family: Averia Sans Libre;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    background-color: white;
+}
+
+  .museum-button:hover {
+    color: #d6542d;
+  }
+
+  
+
+/* HTML Elements */
+html {
+    background-color: rgba(7,137,20,1);
+    color:white;
+    font-family: Averia Sans Libre;
+    font-size: 1.5em;
+}
+
+body {
+    margin: 3em;
+}
+
+div {
+    display: block;
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0%;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0%;
+}
+
+p {
+    display: inline;
+}
+
+button {
+
+    border-radius: 25px;
+    font-family: Averia Sans Libre;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    background-color: white;
+}
+
+
+.bubble {
+	box-sizing: border-box;
+	float: left;
+	width: auto;
+	max-width: 80%;
+	position: relative;
+	clear: both;
+	
+	background: #f5ecec;
+	border: solid 1px rgba(0,0,0,0.5);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+  
+	-webkit-box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+	box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+	
+	margin-bottom: 20px;
+	padding: 6px 20px;
+	color: #000;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+	word-wrap: break-word;
+  }
+
+  /* pointer for speech bubble */
+
+  .pointer {
+	height: 40px;
+	width: 40px;
+	background: #f5ecec;
+	margin: 0 auto;
+	transform: rotate(45deg);
+	border-radius: 0 0 12px 0;
+	margin-top: -22px;
+	position: relative;
+	left: calc(0.5vw - 50px);
+}
+
+
+/* previous and next buttons */
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #8af073;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f07b46;
+    color: #e04e0b;
+  }
+  
+  .next {
+    background-color:#8421b2;
+    color: white;
+  }
+
+  .round {
+    border-radius: 50%;
+  }
+  .bigHeader{
+	text-align: center;
+	width: 300px;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	animation: myfirst 3s linear 1s infinite alternate;
+  }
+
+
+
+  

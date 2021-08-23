@@ -1,0 +1,120 @@
+/* Classes */
+.center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question-header {
+  display: flex;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.museum-button{
+  display: block;
+  border-radius: 25px;
+  font-family: Averia Sans Libre;
+  font-size: 1em;
+  width: 300px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.museum-button:hover {
+  color: #d6542d;
+  background-color: lightgray;
+}
+
+.next-button{
+  display: block;
+  border-radius: 25px;
+  font-family: Averia Sans Libre;
+  font-size: 1em;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.next-button:hover {
+  color: #d6542d;
+  background-color: lightgray;
+}
+
+.speech-bubble {
+	box-sizing: border-box;
+	float: left;
+	width: auto;
+	max-width: 80%;
+	position: relative;
+	clear: both;
+	
+	background: #f5ecec;
+	border: solid 3px rgba(0, 0, 0);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+  
+	-webkit-box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+	box-shadow: inset 0 8px 5px rgba(255,255,255,0.65), 0 1px 2px rgba(0,0,0,0.2);
+	
+	padding: 6px 20px;
+	color: #000;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+	word-wrap: break-word;
+  margin-left: 20px;
+  font-size: 1.3em;
+}
+
+
+/* HTML Elements */
+html {
+  background-color: #8421b2;
+  color:white;
+  font-family: Averia Sans Libre;
+  font-size: 1.5em;
+}
+
+body {
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+div {
+  display: block;
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin: 0%;
+  padding: 10px;
+}
+
+h2 {
+  margin: 0%;
+  text-align: right;
+  padding-right: 1em;
+}
+
+p {
+  display: inline;
+}
+
+/* previous and next buttons */
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+  
+a:hover {
+  background-color: #8af073;
+  color: black;
+}
